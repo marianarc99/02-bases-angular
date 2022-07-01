@@ -2,8 +2,10 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "experimentalDecorators": true,
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "lib": [ "es2015", "DOM" ],
   },
   "files": [
     "src/main.ts",
@@ -11,5 +13,15 @@
   ],
   "include": [
     "src/**/*.d.ts"
+  ],/* ,//ummmmm donde diablos esta la opcion esta de lib
+  "lib": [      
+    "es2020",
+    "dom"
   ]
+   */
+   
+   /*  "compilerOptions": {
+      "lib": [ "es2015" ],
+      "experimentalDecorators": true,
+    } */
 }
